@@ -35,7 +35,6 @@ class MovieController {
 
       const newMovie = await MovieModel.create(data);
 
-      const newGame = await GameModel.create(data);
 
       return res.status(201).json({
         message: "Novo filme criado com sucesso!",
